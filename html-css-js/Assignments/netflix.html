@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Clone</title>
+   <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #111;
+}
+
+.logo {
+  width: 120px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+}
+
+.hero-text {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+}
+
+.movies {
+  padding: 20px;
+}
+
+.movies h2 {
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+
+.movie-row {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.movie-row img {
+  width: 180px;
+  height: 270px;
+  border-radius: 5px;
+}
+
+
+   </style>
+
+</head>
+<body>
+  <header>
+    <img src="../images/Netflix-Logo.png" alt="Netflix Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">My List</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="../images/background_image.jpg" alt="Banner" class="banner" />
+    <div class="hero-text">
+      <h1>Unlimited movies, TV <br> shows and more</h1>
+      <p>Starts at </p>
+    </div>
+  </section>
+
+  <section class="movies">
+    <h2>Popular on Netflix</h2>
+    <div class="movie-row">
+      <img src="../images/movie_1jpeg.jpeg" alt="Movie 1" />
+      <img src="../images/movie_2.jpeg" alt="Movie 2" />
+      <img src="../images/movie_3.jpeg" alt="Movie 3" />
+      <img src="../images/movie_4.jpeg" alt="Movie 4" />
+    </div>
+  </section>
+</body>
+</html>
